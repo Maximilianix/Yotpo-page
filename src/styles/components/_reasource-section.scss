@@ -1,0 +1,106 @@
+.resource-section {
+  background: $lightblue;
+  padding: 322px 20% 272px 20%;
+  color: $darkblue;
+  @media (max-width: $breakpoint-tablet-full) {
+    padding: 150px 70px;
+  }
+  @media (max-width: $breakpoint-mobile) {
+    padding: 150px 25px;
+  }
+  h3 {
+    font-size: 32px;
+    line-height: 1.09;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+  }
+  #resources {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .resource {
+      width: 320px;
+      margin: 0 10px 50px 0;
+      // @media (max-width: $breakpoint-desktop) {
+      //   width: 100%;
+      // }
+      @media (max-width: $breakpoint-tablet-full) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      @media (max-width: $breakpoint-tablet) {
+        width: 100%;
+      }
+      @media (max-width: $breakpoint-all-mobile) {
+        flex-direction: column;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        @media (max-width: $breakpoint-tablet-full) {
+          width: 256px;
+        }
+      }
+      .content-wrap {
+        @media (max-width: $breakpoint-tablet-full) {
+          width: 50%;
+        }
+        @media (max-width: $breakpoint-all-mobile) {
+          width: 100%;
+        }
+        .reasource-type {
+          margin: 15px 0 7px 0;
+          display: inline-block;
+          color: $lightgray4;
+          font-size: 15px;
+          text-transform: uppercase;
+          font-weight: bold;
+          @media (max-width: $breakpoint-tablet-full) {
+            margin-top: 0;
+          }
+          @media (max-width: $breakpoint-tablet-full) {
+            margin-top: 15px;
+          }
+        }
+        h4 {
+          font-size: 20px;
+          line-height: 1.15;
+          letter-spacing: 0.5px;
+        }
+        p {
+          line-height: 1.44;
+          letter-spacing: 0.7px;
+          padding-bottom: 30px;
+          margin-bottom: 15px;
+          border-bottom: 1px solid $lightgray3;
+          word-break: break-word;
+        }
+        .explore {
+          text-decoration: none;
+          margin: 18px auto 0 auto;
+          font-weight: 600;
+          font-size: 15px;
+          color: $blue;
+          @media (max-width: $breakpoint-tablet) {
+            margin-bottom: 40px;
+          }
+          @media (max-width: $breakpoint-mobile) {
+            margin-bottom: 0;
+          }
+          &::after {
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-left: 5px;
+            border-style: solid;
+            border-width: 3.5px 0 3.5px 7px;
+            border-color: transparent transparent transparent $blue;
+          }
+        }
+      }
+    }
+  }
+}

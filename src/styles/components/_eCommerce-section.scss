@@ -1,0 +1,130 @@
+.eCommerce-section {
+  background: $darkblue;
+  color: $white;
+  display: flex;
+  margin: 0 8%;
+  padding-top: 72px;
+  position: relative;
+  @media (max-width: $breakpoint-tablet-full) {
+    flex-direction: column;
+    margin: 0;
+    padding-top: 0;
+  }
+  .eCommerce-content,
+  .eCommerce-image {
+    width: 50%;
+    padding: 0 8%;
+    @media (max-width: $breakpoint-tablet-full) {
+      width: 100%;
+    }
+  }
+  .eCommerce-image {
+    background: $turquoise;
+    margin: 0 auto;
+    @media (max-width: $breakpoint-tablet-full) {
+      order: 2;
+      height: 284px;
+    }
+    @media (max-width: $breakpoint-mobile) {
+      height: 222px;
+    }
+    .icon-g {
+      max-width: 100%;
+      height: auto;
+      position: absolute;
+      left: -215px;
+      top: 110px;
+      @media (max-width: $breakpoint-tablet-full) {
+        width: 200px;
+        top: unset;
+        bottom: 47px;
+        left: -80px;
+      }
+      @media (max-width: $breakpoint-mobile) {
+        width: 150px;
+        left: -59px;
+      }
+    }
+    .illustration {
+      width: 35%;
+      height: auto;
+      margin: 0 auto 4% auto;
+      position: absolute;
+      bottom: 0;
+      @media (max-width: $breakpoint-tablet-full) {
+        width: 460px;
+        right: 8%;
+      }
+      @media (max-width: $breakpoint-tablet) {
+        width: 60%;
+      }
+      @media (max-width: $breakpoint-mobile) {
+        width: 85%;
+        margin: 0 auto 13% auto;
+      }
+    }
+    .bg1 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50%;
+      height: 159px;
+      background-image: linear-gradient(
+        to bottom,
+        $lightturquoise1,
+        $lightturquoise2
+      );
+      @media (max-width: $breakpoint-tablet-full) {
+        width: 100%;
+        height: 107px;
+      }
+      @media (max-width: $breakpoint-mobile) {
+        height: 87px;
+      }
+    }
+    h2 {
+      font-size: 47px;
+      margin: 74px auto 0 auto;
+      @media (max-width: $breakpoint-tablet-full) {
+        position: absolute;
+        top: 0;
+      }
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 32px;
+      }
+    }
+  }
+  .eCommerce-content {
+    @media (max-width: $breakpoint-tablet-full) {
+      padding-top: 110px;
+    }
+    @media (max-width: $breakpoint-tablet) {
+      padding-top: 180px;
+    }
+    h3 {
+      font-size: 27px;
+      font-weight: 500;
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 23px;
+      }
+      &:first-of-type {
+        margin: 74px auto 17px auto;
+        @media (max-width: $breakpoint-mobile) {
+          margin: 50px auto 17px auto;
+        }
+      }
+      &:last-of-type {
+        margin: 50px auto 17px auto;
+      }
+    }
+    p {
+      line-height: 1.6;
+      letter-spacing: 0.8px;
+      margin-bottom: 37px;
+      font-weight: 300;
+      &:last-of-type {
+        margin-bottom: 111px;
+      }
+    }
+  }
+}

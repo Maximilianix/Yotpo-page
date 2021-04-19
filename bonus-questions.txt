@@ -1,0 +1,40 @@
+1. Describe Wordpress Ajax request
+
+Usin Ajax in Wordpress is slightly different than using it outside of Wordpress.
+We need to consider two things:
+    1.1 The URL of the admin-ajax.php file, where the data to be sent for processing.
+    1.2 The Ajax action hook wp-ajax_. (Custom function needs to be hooked into it and will be executed during Ajax call).
+    1.3 Because we using admin-ajax.php,
+     for security reasons Ajax call should be made with a Wordpress nonce
+        and should be treated the same way we treat form submits:
+        Capability checks, validation, samitising, user authentication and etc. 
+
+    <php?  
+
+        add_action('wp_ajax_my_action', 'my_action');
+
+        function my_action(){
+            //get access to database
+            $global $wpdb
+
+            $whatever = intval($_POST['whatever']);
+            $whatever += 10;
+
+            echo $whatever;
+
+            //terminate nad return response
+            wp_die();
+        }
+
+    ?>
+
+
+ 2. Solution for code snippet
+ This can be done with PHP for example by using "include()" function
+ Example shown in "form-block" folded.
+ Another example is to use library like ReactJS and create form component that can be reused.
+ In wordpress this can be done with custom fields (ACF plugin) and inserted as "shortcode" anywhere in page.
+
+
+
+

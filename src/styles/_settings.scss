@@ -1,0 +1,45 @@
+//reset
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+//colors
+$white: #fff;
+$black: #000;
+$blue: #0042e4;
+$darkblue: #272850;
+$darkblue1: #323365;
+$lightblue: #eef3f6;
+$turquoise: #246b6b;
+$turquoisebg: #d3ece8;
+$lightturquoise1: #b2e6dc;
+$lightturquoise2: #7ac8b7;
+$pink: #ffd6d8;
+$pink1: #e60586;
+$gray: #8f8fa0;
+$lightgray1: #d4e1eb;
+$lightgray2: #eef3f6;
+$lightgray3: #c1c1cc;
+$lightgray4: #9a9aaa;
+$lightgray5: #8d8d8d;
+
+//sizes
+$h1size: 64px;
+
+//breakpoints
+$breakpoint-desktop: 1400px;
+$breakpoint-tablet-full: 1024px;
+$breakpoint-tablet: 768px;
+$breakpoint-all-mobile: 767px;
+$breakpoint-mobile: 414px;

@@ -1,0 +1,127 @@
+.google-section {
+  background-color: $pink;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 6% 0 6% 12.5%;
+  @media (max-width: $breakpoint-tablet) {
+    flex-direction: column;
+    padding: 103px 80px 0 80px;
+  }
+  @media (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+    padding: 70px 25px 73px 25px;
+  }
+  .header-image {
+    @media (max-width: $breakpoint-mobile) {
+      display: none;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .google-content {
+    color: $darkblue;
+    max-width: 34%;
+    margin-right: 65px;
+    @media (max-width: $breakpoint-tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-right: 0;
+      max-width: 100%;
+    }
+    h1 {
+      font-size: 64px;
+      @media (max-width: $breakpoint-desktop) {
+        font-size: 50px;
+      }
+      @media (max-width: $breakpoint-tablet-full) {
+        font-size: 47px;
+      }
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 47px;
+        margin-bottom: 15px;
+      }
+    }
+    p {
+      font-size: 22px;
+      letter-spacing: 1.02px;
+      line-height: 1.36;
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 16px;
+        text-align: left;
+      }
+    }
+    form {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 50px;
+      @media (max-width: $breakpoint-mobile) {
+        flex-direction: column;
+        align-items: initial;
+      }
+      input {
+        border: none;
+        padding: 15px 38.8px 15px 14.2px;
+        letter-spacing: 0.8px;
+        font-size: 1rem;
+        &:focus {
+          outline: none;
+        }
+      }
+      ::placeholder {
+        color: $gray;
+      }
+      .demo {
+        display: flex;
+        flex-direction: column;
+        margin-left: 6px;
+        @media (max-width: $breakpoint-mobile) {
+          margin-left: 0;
+        }
+        button {
+          font-weight: 600;
+          font-size: 1rem;
+          letter-spacing: 0.8px;
+          line-height: 1.36;
+          color: $white;
+          background-color: $blue;
+          border: none;
+          padding: 13px 20.5px 15px 21.5px;
+          text-align: center;
+          white-space: nowrap;
+          cursor: pointer;
+          @media (max-width: $breakpoint-mobile) {
+            margin-top: 6px;
+          }
+        }
+        .explore {
+          color: $blue;
+          text-decoration: none;
+          margin: 18px auto 0 auto;
+          font-weight: 600;
+          font-size: 13px;
+          @media (max-width: $breakpoint-tablet) {
+            margin-bottom: 40px;
+          }
+          @media (max-width: $breakpoint-mobile) {
+            margin-bottom: 0;
+          }
+          &::after {
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-left: 5px;
+            border-style: solid;
+            border-width: 3.5px 0 3.5px 7px;
+            border-color: transparent transparent transparent $blue;
+          }
+        }
+      }
+    }
+  }
+}

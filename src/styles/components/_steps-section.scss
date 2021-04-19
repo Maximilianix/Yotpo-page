@@ -1,0 +1,97 @@
+.steps-section {
+  display: flex;
+  margin: 350px 20% 0 21.5%;
+  color: $darkblue1;
+  position: relative;
+  @media (max-width: $breakpoint-tablet-full) {
+    margin: 150px 75px 0 75px;
+  }
+  @media (max-width: $breakpoint-tablet) {
+    flex-direction: column;
+  }
+  @media (max-width: $breakpoint-mobile) {
+    margin: 138px 25px 0 25px;
+  }
+  .steps-image {
+    position: relative;
+    width: 60%;
+    @media (max-width: $breakpoint-tablet) {
+      position: unset;
+      width: 100%;
+    }
+    h2 {
+      font-size: 47px;
+      line-height: 1.06;
+      letter-spacing: 1px;
+      margin-bottom: 21px;
+      @media (max-width: $breakpoint-tablet) {
+        margin-bottom: 37px;
+      }
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 32px;
+      }
+    }
+    img {
+      position: absolute;
+      left: -50%;
+      width: 135.5%;
+      height: auto;
+      margin-top: 100px;
+      @media (max-width: $breakpoint-tablet-full) {
+        left: 0%;
+        width: 100%;
+      }
+      @media (max-width: $breakpoint-tablet) {
+        bottom: -250px;
+        margin-top: 0;
+      }
+      @media (max-width: $breakpoint-mobile) {
+        bottom: -25%;
+        left: -10%;
+      }
+    }
+  }
+  .steps-content {
+    width: 40%;
+    margin-left: 10%;
+    @media (max-width: $breakpoint-tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      margin-left: 0;
+    }
+    .step {
+      margin-bottom: 73px;
+      @media (max-width: $breakpoint-tablet) {
+        max-width: 280px;
+      }
+      @media (max-width: $breakpoint-mobile) {
+        max-width: 100%;
+      }
+      span,
+      h4 {
+        font-size: 27px;
+        line-height: 1.22;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+      }
+      span {
+        color: $pink1;
+      }
+      h4 {
+        display: inline-block;
+      }
+      .hr {
+        margin: 10px 0 13px 0;
+        background: $lightgray3;
+        height: 1px;
+        width: 279px;
+      }
+      p {
+        line-height: 1.44;
+        letter-spacing: 0.7px;
+      }
+    }
+  }
+}
